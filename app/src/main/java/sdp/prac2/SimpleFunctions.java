@@ -16,7 +16,6 @@ public class SimpleFunctions {
          
         // check if list is sorted assending order
        for (int i = 0; i < numbers.size() ; i++) {
-           System.out.println(numbers.get(i));
            
            if((i+1 < numbers.size()) && numbers.get(i) > numbers.get(i+1)){
                sorted = false;
@@ -26,7 +25,6 @@ public class SimpleFunctions {
        //descending order
        if(sorted == false) {
        for (int i = 0; i < numbers.size(); i++) {
-           System.out.println(numbers.get(i));
 
           if ((i+1) >= numbers.size()) {
                break;
