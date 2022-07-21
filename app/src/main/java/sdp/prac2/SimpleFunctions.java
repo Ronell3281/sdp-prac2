@@ -4,7 +4,6 @@ import java.util.*;
 
 public class SimpleFunctions {
     public SimpleFunctions() {}
-<<<<<<< HEAD
     public static int Task1(List<Integer> a, List<Integer> b) {
 
         int sum = 0;
@@ -17,7 +16,6 @@ public class SimpleFunctions {
         return sum;
 
     }
-=======
 
     public static List<Integer> Task4(List<Integer> a, List<Integer> b)
     {
@@ -37,6 +35,20 @@ public class SimpleFunctions {
         
         return null;
     }
+    public static boolean Task3 (String inp) {
+        char[] ch = new char[inp.length()];
+        for (int i = 0; i <= ch.length(); i++){
+            if (ch[i] == '('){
+                char lbrace = ch[i];
+                while (lbrace){
+                    if (ch[i++] != ')'){
+                        return false;
+                    }else{
+                        return true;
+                    }
+                }
+            }
+        }
+    }
 
->>>>>>> origin/g19h4806
 }
