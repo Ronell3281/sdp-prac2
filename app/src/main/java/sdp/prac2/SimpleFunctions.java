@@ -10,6 +10,7 @@ public class SimpleFunctions {
     public SimpleFunctions() {}
 
 
+  
     public static boolean Task5(List<Integer> numbers) {
         Boolean sorted = true;
          
