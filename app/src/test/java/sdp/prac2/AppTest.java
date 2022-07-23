@@ -7,4 +7,26 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
+
+    @Test void methodTest() {
+        //Arrange
+        App SimpleFunctions = new App();
+        List<Integer> data = List<>();
+        List<Integer> indexs = List<>();
+        
+        data.add(2);
+        indexs.add(0);
+        data.add(1);
+        indexs.add(1);
+        data.add(4);
+        indexs.add(2);
+        data.add(5);
+        indexs.add(3);
+        int expected = 12;
+        //Act
+        int result = SimpleFunctions.Task1(data, indexs);
+        //Assert
+        assertArrayEquals(expected, result);
+
+    }
 }
